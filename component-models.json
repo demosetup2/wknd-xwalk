@@ -260,25 +260,6 @@
       }
     ]
   },
-  /*{
-    "id": "accordeon-item",
-    "fields": [
-      {
-        "component": "text",
-        "name": "label",
-        "value": "",
-        "label": "Label",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },*/
   {
     "id": "chart",
     "fields": [
