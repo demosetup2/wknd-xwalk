@@ -278,5 +278,17 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "chart",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "url",
+        "value": "",
+        "label": "URL"
+      }
+    ]
   }
 ]
