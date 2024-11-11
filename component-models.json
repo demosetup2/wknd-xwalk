@@ -260,7 +260,7 @@
       }
     ]
   },
-  {
+  /*{
     "id": "accordeon-item",
     "fields": [
       {
@@ -278,7 +278,7 @@
         "valueType": "string"
       }
     ]
-  },
+  },*/
   {
     "id": "chart",
     "fields": [
