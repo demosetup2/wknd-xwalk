@@ -2,8 +2,9 @@
 export default async function decorate(block) {
     const child = block.querySelector('div > div');
     const id = 'chart_div' + Math.random();
-    const anchorTag = block.querySelector('a');
-    const hrefValue = anchorTag.getAttribute('href');
+    console.log("id value is {}", id);
+    //const anchorTag = block.querySelector('a');
+    //const hrefValue = anchorTag.getAttribute('href');
     child.id = id;
     child.style.width = '100%';
     child.style.height = '500px';
@@ -11,10 +12,14 @@ export default async function decorate(block) {
     let timeSeries = [];
     const res = await fetch("https://mocki.io/v1/4e1f8e5d-ce6b-489c-ba42-468e05b0f9d4");
     const data = await res.json();
+
+    console.log('data received {}', data);
+    
     timeSeries = data['Time Series (15min)'];
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
 
+    console.log('draw chart calling');
 
     function drawChart() {
         var graphData = new google.visualization.DataTable();
